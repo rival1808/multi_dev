@@ -530,8 +530,8 @@ def divev():
 	if v < da:
 	    try:
 		print "\n  Kamu udah menggunakan tools ini lebih dari yang di tentukan oleh pembuat, Silahkan kamu minta passwordnya ke pembuat tools ini dengan cara masukkan tgl,bulan, dan tahun kelahiranmu."
-		l = raw_input('\n [T] Masukkan Tnggal Lahir Kamu : \n ======> ')
-		h = l.replace('/', 'd3v').replace('0', '10')
+		l = raw_input('\n     Contoh : 12/09/2000 \n [T] Masukkan Tnggal Lahir Kamu : \n ======> ')
+		h = l.replace('/', '0').replace('0', '101').replace('2', 'v').replace('1', 'X').replace('3', 'DEV')
 		ha = base64.b64encode(h)
 	
 		subprocess.check_output(['am','start',"https://wa.me/628812457948?text=*KIRIMKAN KODE UNIK INI :"+ha+" WAJIB |*  Assalamu'alaikum,  Bang Minta Passwordnya, ntar saya kirim pulsa 10k serta bukti pengirimannya  | *Syarat Mendapatkan Password = kamu harus kirim pulsa 10k dulu ke no ini = 08812457948, smartfren, Kirim bukti pengiriman pulsanya (ss), ntar kamu akan di beri Password* Note: PESAN INI JANGAN DI HAPUS, HARUS DIKIRIMKAN!!"])
