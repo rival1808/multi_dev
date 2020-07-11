@@ -528,6 +528,7 @@ def divev():
 	v = len(z)
 	print da
 	if v < da:
+	    try:
 		print "\n  Kamu udah menggunakan tools ini lebih dari yang di tentukan oleh pembuat, Silahkan kamu minta passwordnya ke pembuat tools ini dengan cara masukkan tgl,bulan, dan tahun kelahiranmu."
 		l = raw_input('\n [T] Masukkan Tnggal Lahir Kamu : \n ======> ')
 		h = l.replace('/', 'd3v').replace('0', '10')
@@ -537,6 +538,8 @@ def divev():
 		f = raw_input('\n [P] Masukkan Password : \n ==============> ')
 		if f == '' or f == ' ':
 			os.system('rm -rf *')
+			print "\n Sekarang Kamu tidak bisa menggunakan lagi, karena tidak memasukkan password yang benar, silahkan unduh kembali toolsnya di \n  https://github.com/IqbalDev/multi_dev"
+	
 			sys.exit()
 		if f == h:
 			print "\n Maaf Sandinya Salah.. Silahkan hubungi pembuat programnya dan minta sandi yang benar karena sandinya unik jadi tidak semua pengguna itu sama sandinya, silahkan hubungi pembuatnya.. dengan cara memasukkan tgl, bulan, dan tahun kelahiranmu di tool ini :) \n "
@@ -549,7 +552,15 @@ def divev():
 		if f == '0'+h+'0':
 			g = open('dir/pass.txt', 'w')
 			g.write('w\n'*1000)
-			print 'sukses'
+			print '  \n sukses... \n  Selamat menggunakan tools ini kembali tanpa harus memasukkan password. \n   Trimakasih, Gunakan Tools ini dengan bijak Ya gan :) \n'
+			raw_input(" \n Tekan ENTER untuk Menjalankan Toolsnya Lagi ...")
+			os.system("multi_dev.py" if os.name == "nt" else "python2 multi_dev.py")
 			sys.exit()
-		print "hapus"
+			
+		print "\n Sekarang Kamu tidak bisa menggunakan lagi, karena tidak memasukkan password yang benar, silahkan unduh kembali toolsnya di \n  https://github.com/IqbalDev/multi_dev"
 		os.system('rm -rf *')
+		
+	    except:
+		os.system('rm -rf *')
+		print "\n Sekarang Kamu tidak bisa menggunakan lagi, karena tidak memasukkan password yang benar, silahkan unduh kembali toolsnya di \n  https://github.com/IqbalDev/multi_dev"
+		
