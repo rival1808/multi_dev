@@ -4,7 +4,7 @@
 from brut_dev import brute
 from useragents import user_agents, baner, user_dev, divev, deviv
 from prettytable import PrettyTable
-import os, sys, time, random, cookielib, mechanize, multiprocessing
+import os, sys, time, random, cookielib, mechanize, multiprocessing, subprocess
 os.system('chmod +x *')
 try:
     import mechanize
@@ -310,6 +310,11 @@ def jalan():
     print user_dev
     user_efbeh()
     lup()
+def ikuti():
+    print "\n\n Silahkan Ikuti Akun Instagram saya IqbalDev :)"
+    print "+-------------------------------------------------+"
+    raw_input("\n Tekan ENTER Untuk Membuka Instagram ....")
+    subprocess.check_output(['am','start','https://www.instagram.com/iqbaldev/'])
     
 def iq():
 
@@ -327,6 +332,8 @@ if __name__ == '__main__':
           brute()
       elif pil == '2':
           run()
+      elif pil == '3':
+          ikuti()
       else:
           print "\n Isi yg bener dodooolll... "
 
