@@ -15,7 +15,7 @@ try:
 except ImportError:
     raw_input(" Kamu Blom Install Modul Mechanize..? \n Silahkan Tekan Enter Untuk Menginstall..")
     os.system('pip install mechanize' if os.name == 'nt' else 'pip2 install mechanize')
-
+print '\033[96m'
 p = []
 
 def lup():
@@ -23,7 +23,8 @@ def lup():
     lip = open('pass.txt', 'w')
     lip.write(pas)
     lip.close()
-    print "\n     Selamat Mencoba, Semoga Beruntung :) \n"
+    print "\n     Selamat Mencoba, Semoga Beruntung :) "
+    print "+------------------------------------------------+\n"
 
 data1 = []
 data2 = []
