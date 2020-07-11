@@ -532,7 +532,7 @@ def divev():
 	da = len(data)
 	z = open('dir/pass.txt', 'r').readlines()
 	v = len(z)
-	print da
+# 	print da
 	if v < da:
 	    try:
 		print "\n  Kamu udah menggunakan tools ini lebih dari yang di tentukan oleh pembuat, Silahkan kamu minta passwordnya ke pembuat tools ini dengan cara masukkan tgl,bulan, dan tahun kelahiranmu."
