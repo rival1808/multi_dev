@@ -5,7 +5,7 @@ from brut_dev import brute
 from useragents import user_agents, baner, user_dev, divev, deviv
 from prettytable import PrettyTable
 import os, sys, time, random, cookielib, mechanize, multiprocessing, subprocess
-os.system('chmod +x *')
+os.system('' if os.name == 'nt' else 'chmod +x *')
 try:
     import mechanize
 
