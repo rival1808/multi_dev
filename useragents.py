@@ -474,6 +474,9 @@ user_agents = [('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
 
 
 string1 = '''
+    +----------------------------------------+
+           Crack Facebook Target | V.01
+    +----------------------------------------+
       Silahkan Kalian Buat Wordlist Sendiri
   Hanya Dengan Memasukkan Nama Depan Dan Belakan 
 Fb Korban Yang Mau Di Crack Passwordnya ya sayang..
@@ -500,6 +503,9 @@ baner = '''
 '''
 
 user_dev = '''
+    +-------------------------------------+
+          Crack Facebook Masal | V.01
+    +-------------------------------------+
  Silahkan masukkan Nama orang yang mau di crack, 
   contoh penulisan: (dinda) atau (dinda maulia) 
 tanpa tanda kurung () ya gan // Selamat Mencoba :)
