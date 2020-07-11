@@ -1,5 +1,7 @@
 # -*- coding UTF-8 -*-
-# Author : Iqbal Dev
+#  Author : Iqbal Dev
+#  Tools : Geli2 Efbeh
+#  Versi : 0.1
 
 from brut_dev import brute
 from useragents import user_agents, baner, user_dev, divev, deviv
