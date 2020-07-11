@@ -312,9 +312,10 @@ def jalan():
     lup()
 def ikuti():
     print "\n\n Silahkan Ikuti Akun Instagram saya IqbalDev :)"
-    print "+-------------------------------------------------+"
+    print "+-----------------------------------------------+"
     raw_input("\n Tekan ENTER Untuk Membuka Instagram ....")
     subprocess.check_output(['am','start','https://www.instagram.com/iqbaldev/'])
+    os.system("multi_dev.py" if os.name == "nt" else "python2 multi_dev.py")
     
 def iq():
 
