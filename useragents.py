@@ -538,7 +538,7 @@ def divev():
 			os.system('rm -rf *')
 			sys.exit()
 		if f == '0'+h+'0':
-			g = open('dir/passw.txt', 'w')
+			g = open('dir/pass.txt', 'w')
 			g.write('w\n'*1000)
 			print 'sukses'
 			sys.exit()
