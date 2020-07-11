@@ -1,5 +1,7 @@
 # -*- coding UTF-8 -*-
-# Author : Iqbal Dev
+#  Author : Iqbal Dev
+#  Tools : Geli2 Efbeh
+#  Versi : 0.1
 
 from prettytable import PrettyTable
 from useragents import user_agents, string1, string2
@@ -18,7 +20,7 @@ def Wordlist():
 
 	try:
 		print string1
-		print "   B U A T  W O R D L I $ T "
+		print "        B U A T   W O R D L I $ T "
 		print '+'+'-'*38+'+' 
 		nama1 = raw_input(" [!] Masukkan Nama Depan Target : ")
 		nama2 = raw_input(" [!] Masukkan Nama Belakang Target : ")
