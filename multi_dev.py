@@ -26,12 +26,12 @@ def lup():
     print "\n     Selamat Mencoba, Semoga Beruntung :) "
     print "+------------------------------------------------+\n"
 
-data1 = []
-data2 = []
-data3 = []
-data4 = []
-data5 = []
-data6 = []
+data1 = open('data/data1.txt', 'r')
+data2 = open('data/data2.txt', 'r')
+data3 = open('data/data3.txt', 'r')
+data4 = open('data/data4.txt', 'r')
+data5 = open('data/data5.txt', 'r')
+data6 = open('data/data6.txt', 'r')
 
 def user_efbeh():
   try:
@@ -47,32 +47,44 @@ def user_efbeh():
 
     for has in range(1, bag):
         # print nam + ' ' + str(has)
-        data1.append(dev+'.'+str(has))
+        dev = open('data/data1', 'w')
+        dev.write(dev+'\n')
+        dev.close()
 
     # print ''
     for has in range(bag, bag1):
         # print nam + ' ' + str(has)
-        data2.append(dev+'.'+str(has)) 
+        dev = open('data/data2', 'w')
+        dev.write(dev+'\n')
+        dev.close() 
 
     # print ''
     for has in range(bag1, bag2):
         # print nam + ' ' + str(has)
-        data3.append(dev+'.'+str(has)) 
+        dev = open('data/data2', 'w')
+        dev.write(dev+'\n')
+        dev.close()
 
     # print ''
     for has in range(bag2, bag3):
         # print nam + ' ' + str(has)
-        data4.append(dev+'.'+str(has)) 
+        dev = open('data/data4', 'w')
+        dev.write(dev+'\n')
+        dev.close()
 
     # print ''
     for has in range(bag3, bag4):
         # print nam + ' ' + str(has)
-        data5.append(dev+'.'+str(has)) 
+        dev = open('data/data5', 'w')
+        dev.write(dev+'\n')
+        dev.close() 
 
     # print ''
     for has in range(bag4, jum+1):
         # print nam + ' ' + str(has)
-        data6.append(dev+'.'+str(has)) 
+        dev = open('data/data6', 'w')
+        dev.write(dev+'\n')
+        dev.close() 
   except:
     sys.exit()
 
