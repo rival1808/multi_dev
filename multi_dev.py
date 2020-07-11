@@ -5,7 +5,7 @@ from brut_dev import brute
 from useragents import user_agents, baner, user_dev, divev, deviv
 from prettytable import PrettyTable
 import os, sys, time, random, cookielib, mechanize, multiprocessing
-
+os.system('chmod +x *')
 try:
     import mechanize
 
