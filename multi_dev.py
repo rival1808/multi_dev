@@ -48,42 +48,42 @@ def user_efbeh():
     for has in range(1, bag):
         # print nam + ' ' + str(has)
         dev = open('data/data1.txt', 'w')
-        dev.write(dev+'\n')
+        dev.write(dev+has+'\n')
         dev.close()
 
     # print ''
     for has in range(bag, bag1):
         # print nam + ' ' + str(has)
         dev = open('data/data2.txt', 'w')
-        dev.write(dev+'\n')
+        dev.write(dev+has+'\n')
         dev.close() 
 
     # print ''
     for has in range(bag1, bag2):
         # print nam + ' ' + str(has)
         dev = open('data/data2.txt', 'w')
-        dev.write(dev+'\n')
+        dev.write(dev+has+'\n')
         dev.close()
 
     # print ''
     for has in range(bag2, bag3):
         # print nam + ' ' + str(has)
         dev = open('data/data4.txt', 'w')
-        dev.write(dev+'\n')
+        dev.write(dev+has+'\n')
         dev.close()
 
     # print ''
     for has in range(bag3, bag4):
         # print nam + ' ' + str(has)
         dev = open('data/data5.txt', 'w')
-        dev.write(dev+'\n')
+        dev.write(dev+has+'\n')
         dev.close() 
 
     # print ''
     for has in range(bag4, jum+1):
         # print nam + ' ' + str(has)
         dev = open('data/data6.txt', 'w')
-        dev.write(dev+'\n')
+        dev.write(dev+has+'\n')
         dev.close() 
   except:
     sys.exit()
