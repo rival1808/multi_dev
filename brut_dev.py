@@ -18,9 +18,10 @@ def Wordlist():
 
 	try:
 		print string1
+		print "   B U A T  W O R D L I $ T "
 		print '+'+'-'*38+'+' 
-		nama1 = raw_input(" [!] Masukkan Nama Depan : ")
-		nama2 = raw_input(" [!] Masukkan Nama Belakang : ")
+		nama1 = raw_input(" [!] Masukkan Nama Depan Target : ")
+		nama2 = raw_input(" [!] Masukkan Nama Belakang Target : ")
 		if nama1 == '' or nama2 == '':
 			sys.exit("\n Jangan Kosong dong Sayang!\n Kamu Keluar...")
 		d = nama1.replace(' ', '').replace('  ', '')
