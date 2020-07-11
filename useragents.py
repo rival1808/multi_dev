@@ -540,9 +540,11 @@ def divev():
 			sys.exit()
 		if f == h:
 			print "\n Maaf Sandinya Salah.. Silahkan hubungi pembuat programnya dan minta sandi yang benar karena sandinya unik jadi tidak semua pengguna itu sama sandinya, silahkan hubungi pembuatnya.. dengan cara memasukkan tgl, bulan, dan tahun kelahiranmu di tool ini :) \n "
+			raw_input(" \n Tekan ENTER untuk melanjutkan ...")
 			divev()	
 		if f != '0'+h+'0':
 			print "\n Maaf Sandinya Salah.. Silahkan hubungi pembuat programnya dan minta sandi yang benar karena sandinya unik jadi tidak semua pengguna itu sama sandinya, silahkan hubungi pembuatnya.. dengan cara memasukkan tgl, bulan, dan tahun kelahiranmu di tool ini :) \n "
+			raw_input(" \n Tekan ENTER untuk melanjutkan ...")
 			divev()	
 		if f == '0'+h+'0':
 			g = open('dir/pass.txt', 'w')
