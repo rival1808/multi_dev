@@ -125,9 +125,10 @@ def br_dev1(deV):
 				x.add_column("Password", [pas])
 				print x
 			##	data()
-				sys.exit("\n Keluar....")
-		  except:
-		  	pass
+				exit("\n Keluar....")
+		  except KeyboardInterrupt:
+			exit()
+		  	
 		
 
 
@@ -152,9 +153,9 @@ def br_dev2(DEv):
 				x.add_column("Password", [pas])
 				print x
 			##	data()
-				sys.exit("\n Keluar....")
-		  except:
-		  	pass
+				exit("\n Keluar....")
+		  except KeyboardInterrupt:
+			exit()
 
 def brute():
 	Wordlist()
@@ -167,7 +168,7 @@ def brute():
 		thr1.join()
 		thr2.join()
 	except KeyboardInterrupt:
-		sys.exit('\n Keluar.... \n')
+		exit('\n Keluar.... \n')
 
 	print '\n    Tidak Ada Yang Cocok.. \n'
 
