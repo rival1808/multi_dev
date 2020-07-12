@@ -1,6 +1,6 @@
 # multi_dev
 
-Instaling
-pkg install python2
-pip2 install PTable
-pip2 install mehanize
+Instaling /n
+pkg install python2 /n
+pip2 install PTable /n
+pip2 install mehanize /n
