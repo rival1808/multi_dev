@@ -17,12 +17,14 @@ except ImportError:
     os.system('pip install mechanize' if os.name == 'nt' else 'pip2 install mechanize')
 
 p = []
+passs = []
 
 def lup():
     pas = raw_input('\n {$} Password Yang Mungkin Digunakan, Contoh: dinda123\n  => ')
-    lip = open('pass.txt', 'w')
-    lip.write(pas)
-    lip.close()
+#     lip = open('pass.txt', 'w')
+#     lip.write(pas)
+#     lip.close()
+    passs.append(pas)
     print "\n     Selamat Mencoba, Semoga Beruntung :) \n"
 
 data1 = []
@@ -79,7 +81,7 @@ def user_efbeh():
     # print str(data1) + l + str(data2) + l + str(data3) + l + str(data4) + l + str(data5) + l + str(data6)
     # time.sleep(100)
 
-passs = open('pass.txt', 'r').read()
+# passs = open('pass.txt', 'r').read()
 #koneksi ke Browser
 dev = mechanize.Browser()
 ved = cookielib.LWPCookieJar()
