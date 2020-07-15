@@ -128,7 +128,7 @@ def br_dev1(deV):
 				x.add_column("\033[92;1mPassword\033[97;1m", ['\033[96;1m'+pas+'\033[97;1m'])
 				print '\033[97;1m'
 				print x
-				raw_input('\033[96;1m Tekan CTRL + Z + Enter Untuk exit..')
+				raw_input('\033[96;1m\n\n Tekan CTRL + Z + Enter Untuk exit..\n\n')
 			##	data()
                                 time.sleep(100)
 				exit("\n Keluar....")
@@ -159,7 +159,7 @@ def br_dev2(DEv):
 				x.add_column("\033[92;1mPassword\033[97;1m", ['\033[96;1m'+pas+'\033[97;1m'])
 				print '\033[97;1m'
 				print x
-				raw_input('\033[96;1m Tekan CTRL + Z + Enter Untuk exit..')
+				raw_input('\033[96;1m\n\n Tekan CTRL + Z + Enter Untuk exit..\n\n')
 			##	data()
                                 time.sleep(100)
 				exit("\n Keluar....")
