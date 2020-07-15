@@ -30,7 +30,7 @@ def Wordlist():
 		b = nama2.replace(' ', '').replace('  ', '')
 
 		lis = ['123','1234','12345']
-		deV.append('janganmicin321')
+		deV.append('bimillah')
 		for dev in lis:
 			deV.append(nama1+dev)
                 deV.append('sayang')
@@ -130,7 +130,7 @@ def br_dev1(deV):
 				print x
 				raw_input('\033[96;1m Tekan CTRL + Z + Enter Untuk exit..')
 			##	data()
-                                print '\n Tekan CTRL + Z Untuk menghentikan..\n '
+                                time.sleep(100)
 				exit("\n Keluar....")
 		  except:
 			pass
@@ -161,7 +161,7 @@ def br_dev2(DEv):
 				print x
 				raw_input('\033[96;1m Tekan CTRL + Z + Enter Untuk exit..')
 			##	data()
-                                print '\n Tekan CTRL + Z Untuk menghentikan..\n '
+                                time.sleep(100)
 				exit("\n Keluar....")
 		  except:
 			pass
