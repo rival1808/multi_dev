@@ -22,7 +22,6 @@ def Wordlist():
 			sys.exit("\n\033[91;1m Jangan Kosong dong Sayang!\n Kamu Keluar...")
 		d = nama1.replace(' ', '').replace('  ', '')
 		b = nama2.replace(' ', '').replace('  ', '')
-		open('pass.txt', 'w').write('')
 		lis = ['123','12345','321']
 		# ////////////////////////////////////////////
 		for dev in lis:
@@ -86,7 +85,7 @@ def br_dev1(paswq):
 		x.add_column("\033[92;1mPassword\033[97;1m", ['\033[96;1m'+pas+'\033[97;1m'])
 		print '\033[97;1m'
 		print x
-		raw_input('\n\033[96;1m Tekan CTRL + Z + Enter Untuk exit..\n')
+		raw_input('\n\033[96;1m  Selamat Anda Sedang Beruntung :)\n')
 
 	  except:
 	  	pass        
@@ -110,6 +109,6 @@ def brute():
 	except KeyboardInterrupt:
 		exit('\n Keluar.... \n')
 
-	print '\n\033[91;1m    Tidak Ada Yang Cocok.. \n'
+	print '\n\033[92;1m    Selesai Broo..... \n'
 
 
