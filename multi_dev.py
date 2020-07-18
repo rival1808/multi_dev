@@ -42,7 +42,6 @@ def user_dev():
   	p = open("pass.txt", "w")
   	p.write(sandi)
   	p.close()
-  	open("user.txt", "w").write("")
   	for has in range(1, jumlah+1):
   	  try:
   		users.append(userz+'.'+str(has))
@@ -86,7 +85,7 @@ def run():
 	th.join()
 	divev()
 	deviv()
-	print "\n   ==[ Selesai...... ]== \n"
+	print "\n\033[97;1m     ==[ \033[96;1m Selesai......\033[97;1m  ]== \n"
 if __name__ == '__main__':
 	try:
 		os.system('cls' if os.name == 'nt' else 'clear')
@@ -100,7 +99,7 @@ if __name__ == '__main__':
 		elif pil == '3':
 			try:
 				print " \n\n \033[97;1m        +++[ \033[96;1m Tools Versi 0.2 \033[97;1m ]+++" 
-				print " \n               \033[93;1m Keunggulan:\n\n   \033[97;1m   Lebih Power Full daripada yg V.01 \n      bisa mengisi lebih dari 1 password  \n"
+				print " \n               \033[93;1m Keunggulan:\n\n   \033[97;1m   Lebih Power Full dibanding yg V.01 \n      bisa mengisi lebih dari 1 password  \n"
 				print " \n\033[95;1m   Silahkan Ikuti Instagram saya \033[96;1m(IqbalDev)"
 				raw_input(" \033[97;1m    Tekan Enter Untuk Membuka Instagram..")
 				subprocess.check_output(['am', 'start', 'https://www.instagram.com/iqbaldev/'])
