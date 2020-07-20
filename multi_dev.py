@@ -25,6 +25,7 @@ multi = []
 # users = open("user.txt", "r").readlines()
 users1 = []
 users2 = []
+users3 = []
 def user_dev():
   try:
   	print multi_ban
@@ -42,14 +43,18 @@ def user_dev():
   	p = open("pass.txt", "w")
   	p.write(sandi)
   	p.close()
-	bag = jumlah / 2 
-  	for has in range(1, bag+1):
+	bag = jumlah / 3 
+	bag1 = lumlah - bag + 1
+  	for has in range(1, bag):
   	  try:
   		users1.append(userz+'.'+str(has))
   	  except:
   	  	pass
-	for has in range(bag, jumlah+1):
+	for has in range(bag, bag1):
 		users2.append(userz+'.'+str(has))
+		
+	for has in range(bag1, jumlah+1)
+		users3.append(userz+'.'+str(has))
 		
   except KeyboardInterrupt: 
   	exit("\033[91;1m \n Keluar... \n")
@@ -99,14 +104,21 @@ def dev_id1():
 def dev_id2():
 	dev = ThreadPool(2)
 	dev.map(pro_dev, users2)
+	
+def dev_id2():
+	dev = ThreadPool(2)
+	dev.map(pro_dev, users3)
 
 def run():
 	th = Process(target=dev_id1)
 	tk = Process(target=dev_id2)
+	tv = Process(target=dev_id2)
 	th.start()
 	tk.start()
+	tv.start()
 	th.join()
 	tk.join()
+	tv.join()
 	divev()
 	deviv()
 	print "\n\033[97;1m     ==[ \033[96;1m Selesai......\033[97;1m  ]== \n"
