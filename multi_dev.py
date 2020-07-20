@@ -43,8 +43,8 @@ def user_dev():
   	p = open("pass.txt", "w")
   	p.write(sandi)
   	p.close()
-	bag = jumlah / 3 
-	bag1 = lumlah - bag + 1
+	bag = jumlah / 3 + 1
+	bag1 = jumlah - bag + 2
   	for has in range(1, bag):
   	  try:
   		users1.append(userz+'.'+str(has))
