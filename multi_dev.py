@@ -79,18 +79,18 @@ def pro_dev(ival):
 	  except:
 	  	pass
 
-# def dev_id():
-# 	for dev in users:
-# 		pro = Process(target=pro_dev, args=(dev,))
-# 		multi.append(pro)
-# 		pro.start()
-
-# 	for dev in multi:
-# 		dev.join()
-
 def dev_id():
-	p = Pool(30)
-	p.map(pro_dev, users)
+	for dev in users:
+		pro = Process(target=pro_dev, args=(dev,))
+		multi.append(pro)
+		pro.start()
+
+	for dev in multi:
+		dev.join()
+
+# def dev_id():
+# 	p = Pool(30)
+# 	p.map(pro_dev, users)
 
 def run():
 	th = Process(target=dev_id)
