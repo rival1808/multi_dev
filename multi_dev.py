@@ -73,7 +73,7 @@ def pro_dev(ival):
 		if log != mask and not 'login_attempt' in mask and not 'checkpoint' in mask:
 			print "\033[96;1m  [\033[92;1mSUC\033[96;1m] " +'\033[97;1m'+ iqbal + '\033[96;1m |\033[92;1m '+ iqu
 		elif 'checkpoint' in mask: 
-			print "\033[96;1m  [\033[93;1mCHK\033[96;1m] " +'\033[97;1m'+ iqbal + '\033[96;1m |\033[93;1m '+ iqu
+			print "\033[96;1m  [\033[92;1mSUC\033[96;1m] " +'\033[97;1m'+ iqbal + '\033[96;1m |\033[93;1m '+ iqu
 		else:
 			pass
 	  except:
