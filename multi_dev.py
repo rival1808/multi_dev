@@ -23,8 +23,8 @@ multi = []
 # log = "https://www.facebook.com/login.php?login_attempt=1"
 # log1 = "https://m.facebook.com" 
 # users = open("user.txt", "r").readlines()
-users = []
-
+users1 = []
+users2 = []
 def user_dev():
   try:
   	print multi_ban
@@ -42,11 +42,15 @@ def user_dev():
   	p = open("pass.txt", "w")
   	p.write(sandi)
   	p.close()
-  	for has in range(1, jumlah+1):
+	bag = jumlah / 2 
+  	for has in range(1, bag+1):
   	  try:
-  		users.append(userz+'.'+str(has))
+  		users1.append(userz+'.'+str(has))
   	  except:
   	  	pass
+	for has in range(bag, jumlah+1):
+		users2.append(userz+'.'+str(has))
+		
   except KeyboardInterrupt: 
   	exit("\033[91;1m \n Keluar... \n")
   except NameError:
@@ -88,14 +92,21 @@ def pro_dev(ival):
 # 	for dev in multi:
 # 		dev.join()
 
-def dev_id():
+def dev_id1():
 	dev = ThreadPool(2)
-	dev.map(pro_dev, users)
+	dev.map(pro_dev, users1)
+
+def dev_id2():
+	dev = ThreadPool(2)
+	dev.map(pro_dev, users2)
 
 def run():
-	th = Process(target=dev_id)
+	th = Process(target=dev_id1)
+	tk = Process(target=dev_id2)
 	th.start()
+	tk.start()
 	th.join()
+	tk.join()
 	divev()
 	deviv()
 	print "\n\033[97;1m     ==[ \033[96;1m Selesai......\033[97;1m  ]== \n"
