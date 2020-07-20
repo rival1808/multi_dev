@@ -53,7 +53,7 @@ def user_dev():
 	for has in range(bag, bag1):
 		users2.append(userz+'.'+str(has))
 		
-	for has in range(bag1, jumlah+1)
+	for has in range(bag1, jumlah+1):
 		users3.append(userz+'.'+str(has))
 		
   except KeyboardInterrupt: 
