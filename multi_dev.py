@@ -26,6 +26,10 @@ multi = []
 users1 = []
 users2 = []
 users3 = []
+users4 = []
+users5 = []
+users6 = []
+
 def user_dev():
   try:
   	print multi_ban
@@ -43,24 +47,36 @@ def user_dev():
   	p = open("pass.txt", "w")
   	p.write(sandi)
   	p.close()
-	bag = jumlah / 3 + 1
-	bag1 = jumlah - bag + 2
-  	for has in range(1, bag):
-  	  try:
-  		users1.append(userz+'.'+str(has))
-  	  except:
-  	  	pass
-	for has in range(bag, bag1):
-		users2.append(userz+'.'+str(has))
-		
-	for has in range(bag1, jumlah+1):
-		users3.append(userz+'.'+str(has))
+	bag = jumlah / 6 + 1
+	bag1 = jumlah / 3 + 1
+	bag2 = jumlah / 2 + 1
+	bag3 = jumlah / 2 + bag
+	bag4 = jumlah / 2 + bag1
+	
+	for dev in range(1, bag):
+		users1.append(userz+'.'+str(dev))
+	
+	for dev in range(bag, bag1):
+		users2.append(userz+'.'+str(dev))
+	
+	for dev in range(bag1, bag2):
+		users3.append(userz+'.'+str(dev))
+	
+	for dev in range(bag2, bag3):
+		users4.append(userz+'.'+str(dev))
+	
+	for dev in range(bag3, bag4):
+		users5.append(userz+'.'+str(dev))
+	
+	for dev in range(bag4, jumlah+1):
+		users6.append(userz+'.'+str(dev))
 		
   except KeyboardInterrupt: 
   	exit("\033[91;1m \n Keluar... \n")
   except NameError:
   	exit('\n\033[91;1m Masukkan Angka Dodoll..\n')
-
+  except SyntaxError:
+	exit('\n\033[91;1m Masukkan Angka Dodoll..\n ')
 def pro_dev(ival):
 	pas = open("pass.txt", "r").readlines()
 	iqbal = ival.replace('\n', '')
@@ -97,29 +113,50 @@ def pro_dev(ival):
 
 # 	for dev in multi:
 # 		dev.join()
-
+nom = 5
 def dev_id1():
-	dev = ThreadPool(2)
+	dev = ThreadPool(nom)
 	dev.map(pro_dev, users1)
 
 def dev_id2():
-	dev = ThreadPool(2)
+	dev = ThreadPool(nom)
 	dev.map(pro_dev, users2)
 	
 def dev_id3():
-	dev = ThreadPool(2)
+	dev = ThreadPool(nom)
 	dev.map(pro_dev, users3)
 
+def dev_id4():
+	dev = ThreadPool(nom)
+	dev.map(pro_dev, users4)
+
+def dev_id5():
+	dev = ThreadPool(nom)
+	dev.map(pro_dev, users5)
+	
+def dev_id6():
+	dev = ThreadPool(nom)
+	dev.map(pro_dev, users6)
+
 def run():
-	th = Process(target=dev_id1)
-	tk = Process(target=dev_id2)
-	tv = Process(target=dev_id3)
-	th.start()
-	tk.start()
-	tv.start()
-	th.join()
-	tk.join()
-	tv.join()
+	t1 = Process(target=dev_id1)
+	t2 = Process(target=dev_id2)
+	t3 = Process(target=dev_id3)
+	t4 = Process(target=dev_id4)
+	t5 = Process(target=dev_id5)
+	t6 = Process(target=dev_id6)
+	t1.start()
+	t2.start()
+	t3.start()
+	t4.start()
+	t5.start()
+	t6.start()
+	t1.join()
+	t2.join()
+	t3.join()
+	t4.join()
+	t5.join()
+	t6.join()
 	divev()
 	deviv()
 	print "\n\033[97;1m     ==[ \033[96;1m Selesai......\033[97;1m  ]== \n"
