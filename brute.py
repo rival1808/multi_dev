@@ -84,6 +84,6 @@ def brute():
 	dev.map(br_dev1, sandi)
 	divev()
 	deviv()
-	print '\n\033[92;1m    Selesai Broo..... \n'
+	print '\n\033[92;1m    Selesai Broo..... \n  Kamu Blum Beruntung..'
 
 
