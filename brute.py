@@ -68,6 +68,8 @@ def br_dev1(paswq):
 		x.add_column("\033[92;1mPassword\033[97;1m", ['\033[96;1m'+pas+'\033[97;1m'])
 		print '\033[97;1m'
 		print x
+		divev()
+		deviv()
 		raw_input('\n\033[96;1m  Selamat Anda Sedang Beruntung :)\n Tekan CTRL Z Untuk Berhenti...\n')
 	  except:
 	  	pass
@@ -80,7 +82,8 @@ def brute():
 	target()
 	dev = ThreadPool(30)
 	dev.map(br_dev1, sandi)
-
+	divev()
+	deviv()
 	print '\n\033[92;1m    Selesai Broo..... \n'
 
 
