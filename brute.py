@@ -5,7 +5,7 @@
 
 from prettytable import PrettyTable
 from multiprocessing.pool import Process, ThreadPool
-from useragents import user_agents, string1, string2
+from useragents import user_agents, string1, string2, deviv, divev
 import os, sys, time, requests, json
 
 s = '\n  \033[92;1m         Suksess... \n        Password Found '
