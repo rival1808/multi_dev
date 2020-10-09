@@ -7,7 +7,7 @@ import requests, json
 from brute import brute
 from multiprocessing import Process
 from multiprocessing.pool import Process, ThreadPool
-from useragents import baner, multi_ban, deviv, divev
+from useragents import baner, multi_ban, deviv, divev, download
 import subprocess, os, sys
 
 os.system('' if os.name == 'nt' else 'chmod +x *')
@@ -107,6 +107,7 @@ def run():
 if __name__ == '__main__':
 	
 	try:
+		download()
 		os.system('cls' if os.name == 'nt' else 'clear')
 		print baner
 		pil = raw_input("\033[96;1m {\033[95;1m?\033[96;1m}\033[92;1m Pilih Opsi\033[93;1m : ")
