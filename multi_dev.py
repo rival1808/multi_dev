@@ -107,7 +107,7 @@ def run():
 if __name__ == '__main__':
 	
 	try:
-# 		download()
+		download()
 		os.system('cls' if os.name == 'nt' else 'clear')
 		print baner
 		pil = raw_input("\033[96;1m {\033[95;1m?\033[96;1m}\033[92;1m Pilih Opsi\033[93;1m : ")
