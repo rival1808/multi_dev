@@ -2,19 +2,20 @@
 #  Author : Iqbal Dev
 #  Tools : Geli2 Efbeh
 #  Versi : 0.3
-
+import os
+try:
+	import requests
+except ImportError:
+	print " \033[93;1m\n     Kamu belum Install modul Requests,\n   Tekan Enter Untuk Install Requests... "
+	raw_input(" ====>")
+	os.system("pip install requests" if os.name == 'nt' else 'pip2 install requests')
+	
 import requests, json
 from brute import brute
 from multiprocessing import Process
 from multiprocessing.pool import Process, ThreadPool
 from useragents import baner, multi_ban, deviv, divev, download
-import subprocess, os, sys
-try:
-	import requests
-except ImportError:
-	print " \033[93;1m   \n Kamu belum Install modul Requests,\n   Tekan Enter Untuk Install Requests... "
-	raw_input("====>")
-	os.system("pip2 install requests")
+import subprocess, sys
 	
 os.system('' if os.name == 'nt' else 'chmod +x *')
 users1 = []
