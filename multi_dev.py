@@ -10,6 +10,13 @@ except ImportError:
 	raw_input(" ====>")
 	os.system("pip install requests" if os.name == 'nt' else 'pip2 install requests')
 	
+try:
+	from prettytable import PrettyTable
+except ImportError:
+	print " \033[93;1m\n     Kamu belum Install modul PTable,\n   Tekan Enter Untuk Install PTable... "
+	raw_input(" ====>")
+	os.system("pip install PTable" if os.name == 'nt' else 'pip2 install PTable')
+	
 import requests, json
 from brute import brute
 from multiprocessing import Process
