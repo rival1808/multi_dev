@@ -9,7 +9,13 @@ from multiprocessing import Process
 from multiprocessing.pool import Process, ThreadPool
 from useragents import baner, multi_ban, deviv, divev, download
 import subprocess, os, sys
-
+try:
+	import requests
+except ImportError:
+	print " \033[93;1m   \n Kamu belum Install modul Requests,\n   Tekan Enter Untuk Install Requests... "
+	raw_input("====>")
+	os.system("pip2 install requests")
+	
 os.system('' if os.name == 'nt' else 'chmod +x *')
 users1 = []
 
