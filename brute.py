@@ -1,7 +1,7 @@
 # -*- coding UTF-8 -*-
 #  Author : Iqbal Dev
 #  Tools : Geli2 Efbeh
-#  Versi : 0.3
+#  Versi : 0.4
 
 from prettytable import PrettyTable
 from multiprocessing.pool import Process, ThreadPool
