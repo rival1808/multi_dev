@@ -76,7 +76,7 @@ def target():
 			  except requests.exceptions.ConnectionError:
 				  	exit(' Gangguan Koneksi Internet\n Keluarrr....')
 			  except KeyError:
-			  	print " Error Msg "
+			  	print " "
 
 
 		def crk():
