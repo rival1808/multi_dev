@@ -44,8 +44,6 @@ def target():
 	print string2
 	user_dev = raw_input("\033[96;1m {\033[97;1m@\033[96;1m}\033[92;1m Masukkan Username Target:\n\033[93;1m  => \033[97;1m ")
 	user = user_dev.replace('https://www.facebook.com/', '')
-	print user
-	raw_input('')
 	if '08' not in user and '+62' not in user and '.' not in user and '1000' not in user and 'www.facebook.com' not in user:
 
 		print '\033[91;1m+'+'-'*38+'+'
