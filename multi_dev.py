@@ -147,6 +147,9 @@ if __name__ == '__main__':
 			except KeyboardInterrupt:
 				subprocess.check_output(['am', 'start', 'https://www.instagram.com/iqbaldev/'])
 				os.system('multi_dev.py' if os.name == 'nt' else 'python2 multi_dev.py')
+			except WindowsError:
+				os.system('multi_dev.py' if os.name == 'nt' else 'python2 multi_dev.py')
+
 		else:
 			print "\n\033[90;1m Pilih yang Bener lah Kampprett.. "
 	except KeyboardInterrupt:
