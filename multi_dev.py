@@ -140,9 +140,9 @@ if __name__ == '__main__':
 
 		elif pil== '3':
 			try:
-				subprocess.check_output(['am', 'start', 'https://youtu.be/ZpLTqwmy7ck'])
+				subprocess.check_output(['am', 'start', 'https://youtu.be/k6BxejPFU4Q'])
 			except KeyboardInterrupt:
-				psubprocess.check_output(['am', 'start', 'https://youtu.be/ZpLTqwmy7ck'])
+				subprocess.check_output(['am', 'start', 'https://youtu.be/k6BxejPFU4Q'])
 			except WindowsError:
 				os.system('multi_dev.py' if os.name == 'nt' else 'python2 multi_dev.py')
 
